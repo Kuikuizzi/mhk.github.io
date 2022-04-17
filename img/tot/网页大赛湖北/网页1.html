@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>城市介绍</title>
+  <style>
+      h1{
+          text-shadow: white 4px 4px 1px;
+          position: absolute;
+          top: 20px;
+          z-index: 100;
+          font-size: 60px;
+          font-family: 楷体;
+      background-size: 100% 600px;
+      }
+      h2{
+          font-size: 40px;
+          font-family: 楷体;
+      }
+      .if{
+          font-size: 22px;
+          text-indent: 2em;
+      }
+      .io{
+          font-size: 25px;
+          font-family: 楷体;
+          text-indent: 2em;
+      }
+      .gh{
+          font-size: 25px;
+          font-family: 楷体;
+          text-indent: 2em;
+      }
+      .df{
+          font-size: 25px;
+          font-family: 楷体;
+          text-indent: 2em;
+      }
+      .bh{
+          font-size: 25px;
+          font-family: 楷体;
+
+      }
+      .img1{
+          width: 100%;
+          height: 100px;
+      }
+      a{
+          text-decoration: none;
+          color: white;
+      }
+      li{
+          list-style: none;
+          font-size: 40px;
+          display: inline-block;
+          font-family:楷体;
+          position:relative;
+          top: -220px;
+          left: 80px;
+          padding: 0px 120px;
+
+
+      }
+      a:hover{
+          color: #0099FF;
+          background: bisque;
+      }
+      li:hover{
+
+      }
+      .a{
+          position: relative;
+          top: -110px;
+      }
+      .if{
+          font-family: 楷体;
+          font-size: 25px;
+      }
+      .swiper-container {
+          width: 100%;
+          height: 100%;
+
+      }
+      .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+      }
+      </style>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/swiper.min.js"></script>
+</head>
+<body>
+<div>
+    <h1>湖北省</h1>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper"title="湖北武汉长江大桥图片">
+            <div class="swiper-slide"><img src="图片素材/img1.png" height="621" width="100%"/></div>
+            <div class="swiper-slide"><img src="图片素材/img.png" height="607" width="100%"/></div>
+            <div class="swiper-slide"><img src="图片素材/we.png" height="611" width="100%"/></div>
+            <div class="swiper-slide"><img src="图片素材/img2.jpg" height="611" width="100%"/></div>
+        </div>
+
+    </div>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <h2 title="简单介绍湖北省">湖北省简介历史</h2>
+    <p class="if">湖北，简称“鄂”，省会武汉，位于中国中部偏南、长江中游，洞庭湖以北，故名湖北。湖北文化底蕴深厚，
+        中华民族的始祖炎帝的故里在湖北。春秋战国时期的楚国在长达800多年的历史中，创造了楚文化。长江三峡大坝旅游
+        区的核心景点三峡大坝位于湖北省宜昌市境内，三峡大坝全长约2309米，坝高185米，于1994年12月14日动工，
+        2006年5月20日建成。</p>
+
+<img src="图片素材/素材1.png" class="img1">
+    <img src="图片素材/素材2.png" class="a" height="120px" width="120px"/>
+    <ul>
+        <li><a href="风景.html"title="介绍湖北著名景点">风景名胜</a></li>
+        <li><a href="风俗文化.html"title="介绍湖北各地历史文化">风俗文化</a></li>
+        <li><a href="../../../../kkk/首页.html"title="返回首页">返回主页</a></li>
+    </ul>
+    <h2>湖北省旅游景点：</h2>
+    <p class="io">
+        武汉黄鹤楼、武汉东湖东湖风景区、武当山、宜昌三峡大坝、三峡人家风景区、神农架风景区、宜昌长阳土
+        家族自治县清江画廊风景区、恩施州巴东县神农溪、恩施土司城遗址、麻城龟峰山、罗田天堂寨风景区、
+        黄石国家矿山公园、赤壁羊楼洞。</p>
+    <h2>湖北美食小吃：</h2>
+    <p class="gh">全国各地随处可见的正宗武汉热干面、鸭脖子等都是著名的湖北小吃，此外还有糯米包油条、咸糍粑、藕圆子、
+        米耙粑、鱼汁糊粉、欢喜坨、发糕、锅贴饺、糯米鸡、散子、油墩，老通城豆皮，四季美汤包，谈炎记水饺，
+        顺香居烧梅，福庆和牛肉米粉，五芳斋汤圆，小桃园煨汤，老谦记牛肉豆丝</p>
+    <h2>湖北特产：</h2>
+    <p class="df">著名湖北特产不完全榜单：武昌鱼、孝感麻糖、襄阳大头菜、房县黑木耳、十堰市房县、罗田板栗、荆州鱼糕、
+        宜昌蜜桔、利川山药、潜江龙虾、云梦鱼面、精武鸭脖、金柯辣椒、孝感米酒、秭归桃叶橙、英山云雾茶、
+        景阳鸡、恩施黑猪肉、恩施黄牛肉、鹤峰葛仙米、神农架林区野板栗</p>
+    <h2>湖北省古今历史名人：</h2>
+    <p class="bh">古代湖北历史名人：屈原、李时珍、毕升、张居正、王昭君、庞统、陆羽、伍子胥、孟浩然、米芾、皮日休、马谡、袁宗道、袁宏道、袁中道、陈友谅
+        <br/>湖北的革命家军事家：李先念、刘华清、徐海东、项英、恽代英、黎元洪、施洋、许世友、聂凤智、陈锡联、李汉俊、李书城、吴仪、谢富治<br/>
+        湖北文化名人：熊十力、闻一多、池莉、方方、碧野、阿毛、何蔚</p>
+</div>
+</body>
+</html>

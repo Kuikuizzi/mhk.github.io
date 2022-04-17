@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="jquery-1.12.4.js"></script>
+
+    <style>
+
+        body {
+            margin: 0px;
+        }
+
+        .a {
+            position: absolute;
+            right: 800px;
+        }
+
+        .b {
+            position: absolute;
+            top: 100px;
+            padding-left: 0px;
+            width: 100%;
+        }
+
+        .c {
+            font-size: 20px;
+            position: absolute;
+            top: 20px;
+            right: 250px;
+            border: 1px solid;
+        }
+
+        .d {
+            font-size: 20px;
+            position: absolute;
+            top: 20px;
+            right: 150px;
+            border: 1px solid;
+        }
+
+        #a {
+            font-size: 20px;
+            position: absolute;
+            top: 20px;
+            right: 50px;
+            border: 1px solid;
+        }
+
+        #b {
+            position: absolute;
+            right: 0px;
+            top: 50px;
+            width: 200px;
+            height: 230px;
+            z-index: 3;
+            display: none;
+        }
+
+        #c li {
+            list-style-type: none;
+            border: 1px solid;
+            padding: 5px;
+            background: white;
+        }
+
+        #c {
+            width: 123px;
+            position: absolute;
+            right: 250px;
+            top: 33px;
+            z-index: 2;
+            display: none;
+        }
+
+        #d li {
+            list-style-type: none;
+            border: 1px solid;
+            padding: 5px;
+            background: white;
+        }
+
+        #d {
+            width: 123px;
+            position: absolute;
+            right: 149px;
+            top: 30px;
+            z-index: 2;
+            display: none;
+        }
+
+        .e {
+            position: absolute;
+            top: 580px;
+            right: 1250px;
+            z-index: 2;
+        }
+
+        .f {
+            position: absolute;
+            top: 717px;
+            right: 890px;
+            z-index: 2;
+        }
+
+        .g {
+            position: absolute;
+            top: 720px;
+            right: 530px;
+            z-index: 2;
+        }
+
+        .h {
+            position: absolute;
+            top: 730px;
+            right: 40px;
+            z-index: 2;
+        }
+
+        .i {
+            position: absolute;
+            top: 1100px;
+            right: 895px;
+            z-index: 2;
+        }
+
+        .j {
+            position: absolute;
+            top: 1100px;
+            right: 527px;
+            z-index: 2;
+        }
+
+        .k {
+            position: absolute;
+            top: 770px;
+            right: 1250px;
+            z-index: 2;
+        }
+        .l{
+            position: relative;
+            top: 564px;
+        }
+        .n {
+            position: absolute;
+            top: 1130px;
+            right: 1250px;
+            z-index: 2;
+        }
+        .f:hover{
+            transform: scale(1.2);
+            -webkit-transform: scaleX(1.2);
+            -moz-transform: scaleX(1.2);
+            -o-transform: scaleX(1.2);
+        }
+        .g:hover{
+            transform: scale(1.2);
+            -webkit-transform: scaleX(1.2);
+            -moz-transform: scaleX(1.2);
+            -o-transform: scaleX(1.2);
+        }
+        .h:hover{
+            transform: scale(1.2);
+            -webkit-transform: scaleX(1.2);
+            -moz-transform: scaleX(1.2);
+            -o-transform: scaleX(1.2);
+        }
+        .i:hover{
+            transform: scale(1.2);
+            -webkit-transform: scaleX(1.2);
+            -moz-transform: scaleX(1.2);
+            -o-transform: scaleX(1.2);
+        }
+        .j:hover{
+            transform: scale(1.2);
+            -webkit-transform: scaleX(1.2);
+            -moz-transform: scaleX(1.2);
+            -o-transform: scaleX(1.2);
+        }
+        .k:hover{
+            transform: scale(1.2);
+            -webkit-transform: scaleX(1.2);
+            -moz-transform: scaleX(1.2);
+            -o-transform: scaleX(1.2);
+        }
+        .n:hover{
+            transform: scale(1.2);
+            -webkit-transform: scaleX(1.2);
+            -moz-transform: scaleX(1.2);
+            -o-transform: scaleX(1.2);
+        }
+        .m{
+            position: absolute;
+            top: 1500px;
+            /*right: 540px;*/
+        }
+        #aa{
+            font-size: 30px;
+            position: absolute;
+            top: 1700px;
+            right: 1100px;
+            color: rgba(223, 188, 118, 0.81);
+            padding: 7px;
+        }
+        #bb{
+            font-size: 30px;
+            position: absolute;
+            top: 1700px;
+            right: 630px;
+            color: rgba(223, 188, 118, 0.81);
+            padding: 7px;
+        }
+        #cc{
+            font-size: 30px;
+            position: absolute;
+            top: 1700px;
+            right: 200px;
+            color: rgba(223, 188, 118, 0.81);
+            padding: 7px;
+        }
+        #aaa{
+            position: absolute;
+            top: 1850px;
+        }
+        .bbbbbb{
+            position: absolute;
+            right: 11111px;
+        }
+        #aaaa{
+            display: inline;
+            font-size: 30px;
+            padding: 70px;
+        }
+        .aaaa{
+            position: relative;
+            top: 800px;
+            right: -70px;
+        }
+        .bbbb{
+            position: relative;
+            top: 732px;
+            right: -400px;
+        }
+        .cccc{
+            position: relative;
+            top: 664px;
+            right: -730px;
+        }
+        .dddd{
+            position: relative;
+            top: 596px;
+            right: -1060px;
+        }
+        .eeee{
+            position: relative;
+            top: 528px;
+            right: -1300px;
+        }
+        #p{
+            position: relative;
+            top: 600px;
+            right: -500px;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <img alt="您的图片走丢了" class="a" src="img.png">
+    <div id="d">
+        <ul>
+            <li>帮助中心</li>
+            <li>购物指南</li>
+            <li>配送方式</li>
+            <li>售后服务</li>
+        </ul>
+    </div>
+    <div id="a">手机周边</div>
+    <div id="c">
+        <ul>
+            <li>我的订单</li>
+            <li>我的收藏</li>
+            <li>我的优惠券</li>
+            <li>我的道具</li>
+        </ul>
+    </div>
+    <div class="c">我的订单</div>
+    <div class="d">我的收藏</div>
+    <img id="b" alt="您的图片走丢了" src="vx/c250ee5a28aaa0878be8a2357f17215.jpg">
+</div>
+<div class="b">
+    <!-- <img alt="您的图片走丢了" src="西藏图/img_2.png" width="100%" height="564">-->
+    <img class="aaa" src="db6e1f3ceab40521c7fddda687c6cdf.png" width="100%" height="564">
+</div>
+<div class="e"><img alt="您的图片走丢了" src="diqu/img_3.png" width="250px" height="180px"></div>
+<div class="f"><a href="土罐.html"><img alt="您的图片走丢了" src="vx/img_1.png"></a></div>
+<div class="g"><a href="国风团扇.html"><img alt="您的图片走丢了" src="vx/tu.png" width="300px" height="351px"></a> </div>
+<div class="h"><a href="国风象棋.html"><img alt="您的图片走丢了" src="vx/tu2.png" width="400px" height="700px"></a></div>
+<div class="i"><a href="挂画1.html"><img alt="您的图片走丢了" src="tu/img.png" width="300px" height="351px"></a></div>
+<div class="j"><a href="挂画2.html"><img alt="您的图片走丢了" src="tu/img_1.png" width="300px" height="351px"></a></div>
+<div class="k"><a href="颈枕1.html"><img alt="您的图片走丢了" src="tu/img_3.png" width="240px" height="310px"></a></div>
+<div class="l"><img alt="您的图片走丢了" src="tu/img_6.png"  width="100%" height="910px"></div>
+<div class="n"><a href="颈枕2.html"><img alt="您的图片走丢了" src="tu/img_5.png" width="240px" height="310px"></a></div>
+<div class="m"><img alt="您的图片走丢了" src="diqu/img_4.png"></div>
+<div id="aa"><a><img src="diqu/img_1.png"></a></div>
+<div id="bb"><a><img src="diqu/img.png"></a></div>
+<div id="cc"><a><img src="diqu/img_2.png"></a></div>
+<div id="aaa">
+    <img src="西藏图/人参果饭/img_1.png" title="人参果饭" width="300" height="300">
+    <img src="西藏图/炸土豆条/img_1.png" title="炸土豆条" width="300" height="300">
+    <img src="西藏图/甜茶/img.png" width="300" title="甜茶" height="300">
+    <img src="西藏图/藏面/img.png" width="300" title="藏面" height="300">
+    <img src="西藏图/西藏酸奶/img.png" width="300" title="西藏酸奶" height="300">
+</div>
+<div class="bbbbbb">
+    <img src="重庆图/img1.png"  width="300" height="300">
+    <img src="重庆图/img2.png"  width="300" height="300">
+    <img src="重庆图/img3.png"  width="300" height="300">
+    <img src="重庆图/img4.png" width="300" height="300">
+    <img src="重庆图/img5.png"  width="300" height="300">
+</div>
+<div class="bbbbbb">
+    <img src="湖北/img1.png"width="300" height="300">
+    <img src="湖北/img2.png"  width="300" height="300">
+    <img src="湖北/img3.png"  width="300" height="300">
+    <img src="湖北/img4.png" width="300" height="300">
+    <img src="湖北/img5.png"  width="300" height="300">
+</div>
+<img id="p" src="重庆图/img.png">
+</body>
+</html>
+<script>
+    $(function (){
+        $("#bb").click(function (){
+            $("#aaa img:nth-of-type(1)").attr("src","重庆图/img1.png");
+            $("#aaa img:nth-of-type(2)").attr("src","重庆图/img2.png");
+            $("#aaa img:nth-of-type(3)").attr("src","重庆图/img3.png");
+            $("#aaa img:nth-of-type(4)").attr("src","重庆图/img4.png");
+            $("#aaa img:nth-of-type(5)").attr("src","重庆图/img5.png");
+        })
+        $("#cc").click(function (){
+            $("#aaa img:nth-of-type(1)").attr("src","湖北/img1.png");
+            $("#aaa img:nth-of-type(2)").attr("src","湖北/img2.png");
+            $("#aaa img:nth-of-type(3)").attr("src","湖北/img3.png");
+            $("#aaa img:nth-of-type(4)").attr("src","湖北/img4.png");
+            $("#aaa img:nth-of-type(5)").attr("src","湖北/img5.png");
+        })
+        $("#aa").click(function (){
+            $("#aaa img:nth-of-type(1)").attr("src","西藏图/人参果饭/img_1.png");
+            $("#aaa img:nth-of-type(2)").attr("src","西藏图/炸土豆条/img_1.png");
+            $("#aaa img:nth-of-type(3)").attr("src","西藏图/甜茶/img.png");
+            $("#aaa img:nth-of-type(4)").attr("src","西藏图/藏面/img.png");
+            $("#aaa img:nth-of-type(5)").attr("src","西藏图/西藏酸奶/img.png");
+        })
+
+    })
+    /*移入显示，移除消失*/
+    $(function () {
+        $("#a").mouseover(function () {
+            $("#b").show();
+        }).mouseout(function () {
+            $("#b").hide();
+        })
+    })
+    $(function () {
+        $(".c").mouseover(function () {
+            $("#c").show();
+        }).mouseout(function () {
+            $("#c").hide();
+        })
+    })
+    $(function () {
+        $(".d").mouseover(function () {
+            $("#d").show();
+        }).mouseout(function () {
+            $("#d").hide();
+        })
+    })
+</script>

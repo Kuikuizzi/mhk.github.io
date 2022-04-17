@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>风景名胜</title>
+    <style>
+        h1{
+            font-size: 50px;
+            font-family: 楷体;
+            text-shadow: black 5px 5px 10px;
+
+        }
+        ul{
+            background-image: url("图片素材/素材1.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100px;
+
+        }
+        li{
+
+            height: 100px;
+            line-height: 100px;
+            list-style: none;
+            font-size: 40px;
+            display: inline-block;
+            font-family:楷体;
+            padding: 0px 158px;
+            border: 2px solid white;
+
+        }
+        li:hover{
+            background:bisque;
+        }
+        a{color: white;
+            text-decoration: none;
+
+
+        }
+        a:hover{
+            color: #0099FF;
+
+        }
+        .we{
+            position: absolute;
+           top:15px;
+        }
+        h2{
+            font-size: 40px;
+            font-family: 楷体;
+
+        }
+        .p1{
+            font-family: 楷体;
+            font-size: 25px;
+            font-weight: bold;
+            text-indent: 2em;
+        }
+        .p2{
+            font-family: 楷体;
+            font-size: 25px;
+            font-weight: bold;
+            text-indent: 2em;
+        }
+        .p3{
+            font-family: 楷体;
+            font-size: 25px;
+            font-weight: bold;
+            text-indent: 2em;
+        }
+        .p4{
+            font-family: 楷体;
+            font-size: 25px;
+            font-weight: bold;
+            text-indent: 2em;
+        }
+        .p5{
+            font-family: 楷体;
+            font-size: 25px;
+            font-weight: bold;
+            text-indent: 2em;
+        }
+        .p6{
+            font-family: 楷体;
+            font-size: 25px;
+            font-weight: bold;
+            text-indent: 2em;
+        }
+        .p7{
+            font-family: 楷体;
+            font-size: 25px;
+            font-weight: bold;
+            text-indent: 2em;
+        }
+        img:hover{
+            transform: scale(1.1,1.1);
+        }
+        .img1{
+        position: relative;
+            left: 1040px;
+
+        }
+        .nav {
+            z-index: 99999;
+            width: 100%;
+            height: 166px;
+            /*position: relative;*/
+            color: white;
+        }
+
+        /*logl***************************************************************************************************************************************/
+        .nav .logel {
+
+            width: 80px;/*120*/
+            height: 20px;/*30*/
+            overflow: hidden; /*应删除*/
+
+            /*position: absolute;*/
+            position: fixed;
+            top: 10px;/*15*/
+            left: 9px;/*14*/
+
+        }
+
+        /*中间导航列表***********************************************************************************************************************************/
+        .list {
+            width: 24%;
+            height: 24px;/*36*/
+            /*background: #908d8d;!*可删除*!*/
+            position: fixed; /*定位*/
+            top: 8px;/*12*/
+            left: 50%;
+            text-align: center;
+            transform: translateX(-50%);
+            display: flex; /*弹性盒和均匀排列和不换行*/
+            justify-content: space-evenly;
+            flex-wrap: nowrap;
+
+        }
+
+        .list li {
+            flex-grow: 1; /*子均匀分布*/
+            display: flex;
+        }
+
+        .list li a {
+            width: 100%; /**/
+            color: white;
+            font-weight: 400;/*500*/
+            line-height: 24px/*36*/;
+            text-decoration: none;
+            flex-grow: 1; /**/
+            justify-content: center; /**/
+            align-items: center; /**/
+        }
+
+        /*中间导航列表点击特效--------------!!!!!!!!*/
+        .list li:hover {
+            background: rgba(24, 27, 33, 0.4);
+            border-radius: 6px;/*8*/
+
+        }
+
+        /*右侧导航栏***************************************************************************************************************************************/
+        .right {
+            width: 166px;/*250*/
+            height:24px;/*36*/
+            position: fixed;
+            right: 24px;/*36*/
+            top: 8px;/*12*/
+            display: flex;
+            text-align: center;
+            justify-content: space-evenly;
+            flex-wrap: nowrap;
+
+        }
+
+        /*.right*/
+
+        .right div {
+            flex-grow: 1;
+            display: flex;
+        }
+
+        .right div a {
+            width: 100%; /**/
+            font-family: PingFangSC-Regular;
+            font-size: 8px;/*14*/
+            font-weight: 400;/*500*/
+            line-height: 24px;/*36*/
+            color: white;
+            text-decoration: none;
+            flex-grow: 1; /**/
+            justify-content: center; /**/
+            align-items: center; /**/
+
+        }
+
+        /*点击右侧----------------------*/
+        .right div:hover {
+            background: rgba(24, 27, 33, 0.4);
+            border-radius: 6px;/*8*/
+        }
+    </style>
+</head>
+<body id="id">
+<div>
+    <ul>
+        <a href="#id"title="介绍湖北美丽风景游玩地点"><li>风景名胜</li></a>
+        <a href="风俗文化.html"title="介绍湖北各地历史文化"><li>风俗文化</li></a>
+        <a href="网页1.html" title="返回上一层" ><li>返回上一页</li></a>
+        <a href="../../../../kkk/首页.html" title="返回主页面"><li>返回主页</li></a>
+    </ul>
+    <img src="图片素材/素材2.png" class="we"width="100px"height="110px">
+    <h1 title="介绍湖北美丽风景游玩地点">湖北著名景点</h1>
+    <h2>1.武汉大学</h2>
+    <img src="图片素材/wh.jpg" width="23%"height="400px"title="武汉大学校徽">
+    <img src="图片素材/fj1.jpg" width="25%"height="400px"title="行政大楼">
+    <img src="图片素材/fj2.jpg" width="25%"height="400px" title="东湖">
+    <img src="图片素材/fj3.jpg" width="25%"height="400px"title="武大正门牌坊">
+    <p class="p1">武汉大学是中华人民共和国教育部直属的重点综合性大学，位于有"九省通衢"之称的湖北省武汉市。
+        学校坐拥珞珈山，环绕东湖水，地势蜿蜒起伏，错落有致；校园绿树成荫，花香流溢；建筑独具风格，
+        美仑美奂，是世界上最美丽的大学之一。</p>
+    <h2>2.武当山（世界文化遗产、道教圣地）</h2>
+    <img src="图片素材/wd.png" width="23%"height="400px"title="武当山俯瞰">
+    <img src="图片素材/wd.jpg" width="25%"height="400px"title="武当冬季景观">
+    <img src="图片素材/wd1.jpg" width="25%"height="400px"title="武当冬季景观">
+    <img src="图片素材/wd2.jpg" width="25%"height="400px"title="武当山玄帝殿">
+    <p class="p2">武当山，又名太和山，位于湖北省十堰市境内，景区总面积312平方公里。武当山是我国著名的道教圣地、
+        太极拳的发祥地、国家重点风景名胜区、全国十大避暑胜地，武当山属自然景观和人文景观完美结合的山
+        岳型风景名胜区，以其绚丽多姿的自然景观、规模宏大的古建筑群、源远流长的道教文化、博大精深的武当
+        武术著称于世，被誉为"亘古无双胜境，天下第一仙山"。</p>
+    <h2>3.武汉黄鹤楼</h2>
+    <img src="图片素材/hhl.jpg" width="23%"height="400px"title="黄鹤楼夜景">
+    <img src="图片素材/hhl1.jpg" width="25%"height="400px"title="黄鹤楼夜景">
+    <img src="图片素材/hhl2.jpg" width="25%"height="400px"title="摄影师镜头下的黄鹤楼">
+    <img src="图片素材/hhl3.jpg" width="25%"height="400px"title="黄鹤楼日出">
+    <p class="p3">黄鹤楼,位于湖北武汉武昌长江南岸蛇山峰岭之上,楼5层，高50余米，72根圆柱拔地而起，
+        60个翘角凌空舒展，恰似黄鹤腾飞。始建于三国时代吴黄武二年 （公元223年），历代屡建屡毁，今天看到的
+        黄鹤楼，是1985年重建的。黄鹤楼是国家5A级景点， 享有“天下绝景” 、“天下江山第一楼”之称，是武汉的城市地标之一，
+        因唐代诗人崔颢“昔人已乘黄鹤去， 此地空余黄鹤楼”的诗句而名扬天下，李白等都为黄鹤楼留下了诗词。
+        登上黄鹤楼远眺，可以看到滚滚长江和武汉三镇风光。
+        武汉三镇风光。</p>
+    <h2>4.神龙架风景区</h2>
+    <img src="图片素材/slj.jpg" width="23%"height="400px"title="神农架山区风光">
+    <img src="图片素材/slj1.jpg" width="25%"height="400px"title="神龙架山区的金丝猴">
+    <img src="图片素材/slj2.jpg" width="25%"height="400px"title="神农架大九湖">
+    <img src="图片素材/slj3.jpg" width="25%"height="400px"title="神农架香溪源景区">
+    <p class="p4">神农架（也称神农架林区），位于湖北省的西部，北面和南面分别于十堰市（武当山所在地）和宜昌市
+        （三峡大坝所在地）相邻。作为一个区域广阔的旅游目的地，分为神农顶旅游区、天燕旅游区、香溪源旅游区
+        和玉泉河旅游区，当你来到神农架林区，就如同进入了一个原始森林，处处都是参天大树，草木茂盛，每天都
+        是在大自然的天然氧吧中畅游，完全远离喧嚣和浑浊的城市生活。在神农顶旅游区，你可以登山“华中屋脊”，
+        旅游区内的神农顶是华中地区的第一高峰，还可以观赏到珍稀可爱的金丝猴，这里还是神秘的“神农架野人”出
+        没的地方，经常会发现一些野人的毛发、脚印等遗迹！</p>
+    <h2>5.中国唐城（襄阳）</h2>
+    <img src="图片素材/tc.jpg" width="23%"height="400px"title="唐城风光">
+    <img src="图片素材/tc1.jpg" width="25%"height="400px"title="唐城夜景">
+    <img src="图片素材/tc2.jpg" width="25%"height="400px"title="唐城风光">
+    <img src="图片素材/tc3.jpg" width="25%"height="400px"title="唐城夜景">
+    <p class="p5">中国唐城位于文化底蕴深厚、自然风光秀美的岘山临江风景区，将岘山、汉水、孟浩然、习家池等大批代表性
+        襄阳文化元素注入景区，为游人呈现浪漫唐城之旅，也是古装拍照的理想之所。 景区建有凯旋楼、明德门、
+        朱雀廊、东西市等建筑群，高大的古典建筑与汉水粼粼波光相映成趣，踏入大门后仿佛穿越时空梦回唐朝，
+        夜游至此更是别有一番风味。这里还是影视拍摄基地，《妖猫传》便是在此取景的。</p>
+    <h2>6.武汉海昌极地海洋公园</h2>
+    <img src="图片素材/hy.jpg" width="23%"height="400px"title="白鲸">
+    <img src="图片素材/hy1.jpg" width="25%"height="400px"title="北极熊">
+    <img src="图片素材/hy2.jpg" width="25%"height="400px"title="艺术表演">
+    <img src="图片素材/hy3.jpg" width="25%"height="400px"title="企鹅">
+    <p class="p6"> 武汉海昌极地海洋公园，连续六年获得湖北地区“最受欢迎主题公园”，国家极地科普教育极地、国家4A级旅游
+        景区。位于武汉市东西湖区，包含极地王国、海洋王国、动物王国、小动物王国和欢乐岛共计四区一岛五大
+        区域，以南北极动物表演、展示、互动、科普为主，涵盖旅游、休闲、亲子度假等多种娱乐方式。武汉海昌极
+        地海洋公园共拥有上千种，万余只极地海洋动物、陆地小动物、两栖爬行动物和丛林飞鸟；海、陆、空动物产
+        品全面覆盖，配套商用物业在华中区域开创了以极地海洋公园为主题，集休闲、饮食、娱乐、度假等综合配套
+        与一体的海洋生态国际社区。</p>
+    <h2>7.恩施大峡谷</h2>
+    <img src="图片素材/es1.jpg" width="23%"height="400px"title="恩施大峡谷">
+    <img src="图片素材/es.jpg" width="25%"height="400px"title="峡谷风光">
+    <img src="图片素材/es2.jpg" width="25%"height="400px"title="缆车">
+    <img src="图片素材/es3.jpg" width="25%"height="400px"title="峡谷风光">
+    <p class="p7">恩施大峡谷位于恩施市屯堡乡和板桥镇境内，是清江大峡谷一段，峡谷内有地缝，有层层叠叠的峰丛，还有近
+        乎垂直于峡谷的大断崖。 景区可以分为山下的云龙河地缝和山中区域。进入景区后，先乘坐观光车前往云龙
+        河地缝，游玩后继续乘坐观光车到达景点“倒灌水”（观光车到这里结束）。从这里开始，沿着一条环形的山间
+        台阶可以游遍整个山中区域，不用走回头路。游客可以全程步行（约3小时），也可以在上山途中选择一段索
+        道，在下山途中选择一段电梯。下山后，再次乘坐观光车到达景区大门。其中主要景点有一线天、绝壁长廊和
+        一炷香等。“一炷香”是高达150多米，较小的直径只有4米的峰柱，是整个景区的标志，是大峡谷的镇谷之宝。
+    </p>
+    <a href="#id"><img src="图片素材/fh.jpg" width="120px"height="100"class="img1"title="返回至本页顶部"></a>
+</div>
+</body>
+</html>

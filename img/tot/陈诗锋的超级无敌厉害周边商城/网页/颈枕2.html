@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <script src="jquery-1.12.4.js"></script>
+
+  <style>
+    #aa{
+      background: #f1ebeb;
+      height:730px;
+      width: 600px;
+      position: relative;
+      top: 10px;
+      right: -70px;
+    }
+    #cc{
+      position: relative;
+      right: 1170px;
+      top: -550px;
+      /*z-index: 5;*/
+    }
+    .a{
+      width: 70px;
+      height: 70px;
+      position: relative;
+      top: 650px;
+      right: -120px;
+    }
+    .b{
+      width: 70px;
+      height: 70px;
+      position: relative;
+      top: 650px;
+      right: -130px;
+    }
+    .c{
+      width: 70px;
+      height: 70px;
+      position: relative;
+      top: 650px;
+      right: -140px;
+    }
+    .d{
+      width: 70px;
+      height: 70px;
+      position: relative;
+      top: 650px;
+      right: -150px;
+    }
+    #a {
+      width: 350px;
+      height: 550px;
+      position: absolute;
+      top: -100px;
+      right: -80px;
+    }
+    .ab span,.ab img{
+      vertical-align: middle;
+    }
+    #bb{
+      position: absolute;
+      top:-10px;
+      right: 100px;
+    }
+    #p{
+      color: goldenrod;
+    }
+
+  </style>
+</head>
+<body>
+<div id="aa">
+  <img class="a" src="颈枕2/img1.png">
+  <img class="b" src="颈枕2/img2.png">
+  <img class="c" src="颈枕2/img3.png">
+  <img class="d" src="颈枕2/img4.png">
+</div>
+<div id="cc">
+  <img id="a" src="颈枕2/img1.png">
+</div>
+<div id="bb">
+  <h2>淘气虎 颈枕</h2>
+  <p>淘气虎 颈枕~</p>
+  <img src="颈枕1/img.png">
+  <p class="ab"><span>颜色</span>  <a href="#e"><img id="e" title="白色" src="颈枕2/img.png"></a></p>
+  <p class="ab"><span>尺码</span>  <a href="#f"><img id="f" title="均码" src="颈枕1/img_2.png"></a></p>
+  <p class="ab"> <span>数量</span>  <img src="颈枕1/img_3.png"></p>
+  <a href="颈枕收款.html"><img src="颈枕1/img_4.png"></a>
+  <p>百分百官方正品</p>
+  <p>假一赔十</p>
+  <a href="网页2.html" id="p">返回周边商城</a>
+</div>
+</body>
+<script>
+  /*移入显示，移除消失*/
+  $(function () {
+    $(".a").mouseover(function () {
+      $("#a").attr("src","颈枕2/img1.png");
+    })
+    $(".b").mouseover(function () {
+      $("#a").attr("src","颈枕2/img2.png");
+    })
+    $(".c").mouseover(function () {
+      $("#a").attr("src","颈枕2/img3.png");
+    })
+    $(".d").mouseover(function () {
+      $("#a").attr("src","颈枕2/img4.png");
+    })
+  })
+
+</script>
+</html>

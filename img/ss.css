@@ -1,0 +1,880 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    perspective: 800px;
+}
+/*#A{*/
+/*    position: absolute;*/
+/*    top:50%;*/
+/*    right:50%;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    display: none;*/
+/*}*/
+
+a{
+    width: 100%;
+    height: 100%;
+}
+.save {
+    width: 2560px;
+    height: 1600px;
+    position: relative;
+}
+
+.second {
+    width: 2560px;
+    height: 1600px;
+    position: relative;
+}
+
+.third {
+    width: 2560px;
+    height: 1600px;
+    position: relative;
+}
+.fourth {
+    width: 2560px;
+    height: 1600px;
+    position: relative;
+}
+
+.fith{
+    width: 2560px;
+    height: 1600px;
+    position: relative;
+}
+
+/*！！！！！背景图片***********************************************************************************************************************************************/
+/*1111111*/
+.save > img {
+    display: block;
+    position: absolute;
+    /*left: 50%;*/
+    /*top: 50%;*/
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    /*transform: translate(-50%, -50%);*/
+    transition: all 2s; /**/
+    animation: first 2s ease-out; /**！！！！！！！！！！！！*/
+}
+/*第1张背景图片特效!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@keyframes first {
+    from {
+        /*transform-origin: ;*/
+        transform: scale(1.3);
+
+    }
+    to {
+        /*transform-origin: ;*/
+        /*transform-origin: 2560px 1600px;*/
+        transform: scale(1); /*!!!!!!!!!!!!!*/
+    }
+
+}
+
+/*背景2222222222*/
+.second > img {
+    display: block;
+    position: absolute;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    filter: blur(20px);
+    transition:all 2s;
+
+
+
+
+}
+.second > img:hover{/*放在图片清晰动画，过渡*/
+    filter: blur(0px);
+    animation: second 10s ease ;
+}
+@keyframes second {/*触摸图片图片缩放*/
+    from{
+        transform-origin: 546px 341px;
+        transform: scale(2);
+    }
+    to{
+        transform-origin: 546px 341px;
+        transform: scale(1);
+    }
+
+}
+.second>.aa:hover+img{/*触摸隐形块动画停止，图片清晰过度*/
+    animation-play-state: paused;
+    filter: blur(0);
+    transform: scale(2);
+    transform-origin: 1092px 341px; /*中心*/
+
+
+}
+.second>.aa{
+    width: 204px; /*256*/
+    height: 32px; /*26*/
+    /*background-color: #F10158;*/
+    position: absolute;
+    bottom: 9%;
+    left:604px; /*1280*/
+    /*transform: translateX(-214px); !*268*!*/
+    margin: 8px;
+    z-index: 9999;
+}
+
+
+/*背景333333333333*/
+.second > img {
+    display: block;
+    position: absolute;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    filter: blur(20px);
+    transition:all 2s;
+
+
+
+
+}
+.third > img:hover{/*放在图片清晰动画，过渡*/
+    filter: blur(0px);
+    animation: second2 10s ease ;
+}
+@keyframes second2 {/*触摸图片图片缩放*/
+    from{
+        transform-origin: 768px 272px;
+        transform: scale(2);
+    }
+    to{
+        transform-origin: 768px 272px;
+        transform: scale(1);
+    }
+
+}
+.third>.aa:hover+img{/*触摸隐形块动画停止，图片清晰过度*/
+    animation-play-state: paused;
+    filter: blur(0);
+    transform: scale(2);
+    transform-origin: 1092px 341px; /*中心*/
+
+
+}
+.third>.aa{
+    width: 204px; /*256*/
+    height: 32px; /*26*/
+    /*background-color: #F10158;*/
+    position: absolute;
+    bottom: 9%;
+    left:604px; /*1280*/
+    /*transform: translateX(-214px); !*268*!*/
+    margin: 8px;
+    z-index: 9999;
+}
+
+/*背景444444444444444*/
+.fourth > img {
+    display: block;
+    position: absolute;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    filter: blur(20px);
+    transition:all 2s;
+
+
+
+
+}
+.fourth > img:hover{/*放在图片清晰动画，过渡*/
+    filter: blur(0px);
+    animation: second 10s ease ;
+}
+@keyframes second {/*触摸图片图片缩放*/
+    from{
+        transform-origin: 546px 341px;
+        transform: scale(2);
+    }
+    to{
+        transform-origin: 546px 341px;
+        transform: scale(1);
+    }
+
+}
+.fourth>.aa:hover+img{/*触摸隐形块动画停止，图片清晰过度*/
+    animation-play-state: paused;
+    filter: blur(0);
+    transform: scale(2);
+    transform-origin: 1092px 341px; /*中心*/
+
+
+}
+.fourth>.aa{
+    width: 204px; /*256*/
+    height: 32px; /*26*/
+    /*background-color: #F10158;*/
+    position: absolute;
+    bottom: 9%;
+    left:604px; /*1280*/
+    /*transform: translateX(-214px); !*268*!*/
+    margin: 8px;
+    z-index: 9999;
+}
+.fith > img {
+    display: block;
+    position: absolute;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    overflow: hidden;}
+
+
+/*############################################################################################################################################################################################################################################*/
+
+/*隐形块********************************************************************************************************************/
+nav[class=aa] {
+    width: 204px; /*256*/
+    height: 32px; /*26*/
+    /*background-color: #F10158;*/
+    position: absolute;
+    bottom: 9%;
+    left:604px; /*1280*/
+    /*transform: translateX(-214px); !*268*!*/
+    margin-right: 8px;
+    z-index: 9999;
+
+    /*点击事件*/
+    /*pointer-events: auto;*/
+
+
+}
+.second .aa a{
+    width: 100%;
+    height: 100%;
+}
+
+/*隐形块的超链接元素********************************************************************************************************************************/
+.save .aa:hover a {
+    display: block;
+    width: 170px; /*256*/
+    height: 27px; /*40*/
+
+    border-radius: 14px; /*20px*/
+    color: #393c41;
+    /*pointer-events: none;*/
+
+
+}
+.second .aa:hover a {
+    display: block;
+    width: 170px; /*256*/
+    height: 27px; /*40*/
+
+    border-radius: 14px; /*20px*/
+    color: #393c41;
+    /*pointer-events: none;*/
+
+
+}
+
+/*点击按钮时背景图片效果**************************************************************1111！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！**********************************************************************************************/
+.aa:hover + img {
+    transform: scale(2);
+    transform-origin: 14px 20px; /*中心*/
+
+}
+
+/*.div .ab {*/
+/*    background-color: #9C2F06;*/
+/*}*/
+
+/* 导航栏WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW***************************************************************************************************************************************/
+.nav {
+    z-index: 99999;
+    width: 100%;
+    height: 166px;
+    /*position: relative;*/
+    color: white;
+}
+
+/*logl***************************************************************************************************************************************/
+.nav .logel {
+
+    width: 80px; /*120*/
+    height: 20px; /*30*/
+    overflow: hidden; /*应删除*/
+
+    /*position: absolute;*/
+    position: fixed;
+    top: 10px; /*15*/
+    left: 9px; /*14*/
+
+}
+
+/*中间导航列表***********************************************************************************************************************************/
+.list {
+    width: 24%;
+    height: 24px; /*36*/
+    /*background: #908d8d;!*可删除*!*/
+    position: fixed; /*定位*/
+    top: 8px; /*12*/
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    display: flex; /*弹性盒和均匀排列和不换行*/
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+
+}
+
+.list li {
+    flex-grow: 1; /*子均匀分布*/
+    display: flex;
+}
+
+.list li a {
+    width: 100%; /**/
+    color: white;
+    font-weight: 400; /*500*/
+    line-height: 24px /*36*/;
+    text-decoration: none;
+    flex-grow: 1; /**/
+    justify-content: center; /**/
+    align-items: center; /**/
+}
+
+/*中间导航列表点击特效--------------!!!!!!!!*/
+.list li:hover {
+    background: rgba(24, 27, 33, 0.4);
+    border-radius: 6px; /*8*/
+
+}
+
+/*右侧导航栏***************************************************************************************************************************************/
+.right {
+    width: 166px; /*250*/
+    height: 24px; /*36*/
+    position: fixed;
+    right: 24px; /*36*/
+    top: 8px; /*12*/
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+
+}
+
+/*.right*/
+
+.right div {
+    flex-grow: 1;
+    display: flex;
+}
+
+.right div a {
+    width: 100%; /**/
+    font-family: PingFangSC-Regular;
+    font-size: 8px; /*14*/
+    font-weight: 400; /*500*/
+    line-height: 24px; /*36*/
+    color: white;
+    text-decoration: none;
+    flex-grow: 1; /**/
+    justify-content: center; /**/
+    align-items: center; /**/
+
+}
+
+/*点击右侧----------------------*/
+.right div:hover {
+    background: rgba(24, 27, 33, 0.4);
+    border-radius: 6px; /*8*/
+}
+
+/*MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM*/
+/*中央的大logo******************************************************************************************************************************************************/
+.Alogel {
+    /*width: 6%;*/
+    height: 40px; /*40*/
+    color: white;
+    font-size: 26px; /*40*/
+    position: absolute;
+    top: 140px; /*210*/
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    animation: biglogl 1600ms cubic-bezier(0.165, 0.84, 0.44, 1) 500ms both; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+}
+/*!大图标出现特效!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@keyframes biglogl {
+    from {
+        opacity: 0;
+        top: 153px /*230*/
+    }
+    to {
+        opacity: 1;
+
+        top: 140px /*210*/
+
+    }
+}
+.Alogel2 {
+    /*width: 6%;*/
+    height: 40px; /*40*/
+    color: white;
+    font-size: 26px; /*40*/
+    position: absolute;
+    top: 185px; /*210*/
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 2s ;
+}
+.second>img:hover+.Alogel2{
+    opacity: 1;
+    top:140px
+
+
+}
+.third>img:hover+.Alogel2{
+    opacity: 1;
+    top:140px
+
+
+}
+.fourth>img:hover+.Alogel2{
+    opacity: 1;
+    top:140px
+
+
+}
+/*中央的小logo*********************************************************************************************************************/
+.minl {
+    height: 16px; /*20*/
+    color: white;
+    font-size: 14px; /*20*/
+    position: absolute;
+    top: 180px; /*271*/
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%); /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    animation: minlogo 1750ms cubic-bezier(0.165, 0.84, 0.44, 1) 750ms both; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+}
+
+/*!小logo出现动画!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@keyframes minlogo {
+    from {
+        opacity: 0;
+        top: 200px; /*300*/
+    }
+
+
+    to {
+        opacity: 1;
+        top: 180px; /*271*/
+
+
+    }
+}
+
+.minl > a {
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 13px; /*20*/
+    text-decoration: none;
+
+}
+
+.minl > a:hover {
+    text-decoration: underline;
+
+}
+
+
+/*下部双按钮***********************************************************************************************************************************************/
+.afoot {
+    /*width: 100%;*/
+    width: 428px; /*536*/
+    height: 32px; /*40*/
+    position: absolute;
+    bottom: 9%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    /*justify-content:space-between;*/
+}
+
+.afoot div {
+    flex-grow: 1;
+}
+
+/*底部 左按钮-************************************************************************************************************************************/
+.afoot.aleft {
+    /*background-color: #0D7114;*/
+    width: 204px; /*256*/
+    height: 32px; /*40*/
+    text-align: center;
+    margin-left: 0;
+    z-index: 10000;
+    /*pointer-events: auto;*/
+
+}
+
+.afoot .aleft a {
+    position: absolute;
+    width: 204px; /*256*/
+    height: 32px; /*40*/
+
+    display: block;
+    line-height: 32px; /*40*/
+    font-family: PingFangSC-Regular;
+    font-size: 11px; /*14*/
+    font-weight: lighter;
+    color: white;
+    background-color: #171120cc;
+    text-decoration: none;
+    border-radius: 16px; /*20*/
+    margin-right: 18px; /*18*/
+    pointer-events: none;
+    animation: suofang 1500ms cubic-bezier(0.165, 0.84, 0.44, 1) both 1s; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+}
+
+
+@keyframes suofang { /*底部左侧按钮出现动画!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    from {
+        left: -37px; /*47*/
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.afoot .aleft a:hover {
+    background-color: white;
+    color: #393c41;
+    /*pointer-events: none;*/
+
+
+}
+
+
+/*底部右按扭***********************************************************************************************************************************************************************************************************---------------*/
+.afoot.aright {
+    /*background-color: #0D7114;*/
+    width: 204px;
+/ 256 * / height: 32 px; /*40*/
+    text-align: center;
+    border-radius: 12px; /*16*/
+    /*pointer-events: none;*/
+
+
+}
+
+
+.save .footer .aright a {
+    /*position: relative;*/
+    /*animation:;*/
+    /*animation-duration: 5s;*/
+}
+
+.afoot .aright a {
+    position: absolute;
+    width: 204px; /*111!!1!!!!!!!!!!!!!!!!!!!!!!!70*/
+    height: 32px; /*40*/
+
+    display: block;
+    line-height: 32px; /*40*/
+    font-family: PingFangSC-Regular;
+    font-size: 11px; /*14*/
+    color: #393c41;
+    background-color: #ffffffa6;
+    text-decoration: none;
+    border-radius: 20px; /*20*/
+    margin-left: 100px; /*11*/
+    /*pointer-events: auto;*/
+    animation: btright 1500ms cubic-bezier(0.165, 0.84, 0.44, 1) both 1s; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+}
+
+@keyframes btright { /*底部右侧按钮出现动画！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！*/
+    from {
+        right: -38px; /*47*/
+        opacity: 0;
+    }
+    to {
+        right: 0;
+        opacity: 1;
+    }
+
+}
+
+.afoot .aright a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    /*pointer-events: auto;*/
+}
+
+/*下引导箭头*************************************************************************************************************************************************************************************/
+
+.around {
+    font-family: SimSun-ExtB;
+    color: black;
+
+    font-size: 40px; /*50*/
+    width: 16px /*20*/;
+    height: 16px; /**/
+
+
+    position: absolute;
+    bottom: 80px; /*100*/
+    right: 50%;
+
+    animation: down 1750ms 1750ms ease both, rap 1s 3000ms linear both infinite /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+}
+
+.around a {
+    text-decoration: none;
+    color: black;
+}
+
+/*!下箭头跳动动画!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@keyframes rap {
+    0% {
+
+        bottom: 80px; /*100*/
+
+    }
+    20% {
+
+        bottom: 72px; /*90*/
+    }
+    40% {
+        bottom: 76px; /*100*/
+    }
+    60% {
+        bottom: 76px; /*96*/
+    }
+    80% {
+        bottom: 80px; /*100*/
+    }
+    100% {
+        bottom: 80px; /*100*/
+    }
+}
+/*下箭头出现动画!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@keyframes down {
+    0% {
+        /*transform: translateY(160px);*/
+        opacity: 0;
+        bottom: 190px; /*180*/
+    }
+    66% {
+
+        bottom: 76px; /*96*/
+    }
+    100% {
+        opacity: 1;
+        bottom: 80px; /*100*/
+    }
+}
+
+/***右上下拉导航栏WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+.money {
+    width: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 1600px;
+    background-color: transparent;
+    display: none;
+    opacity: 0;
+    transition: width 500ms ease-in; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    /*pointer-events: none;*/
+}
+
+.abside:hover .money {
+    width: 186px; /*280*/
+    opacity: 0.8;
+    display: block;
+    animation: money 100ms linear 100ms;
+
+
+}
+
+
+@keyframes money { /*!!点导航栏出现动画!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    from {
+        opacity: 0.8;
+        background-color: transparent;
+        /*padding-left: 0;*/
+    }
+    to {
+        background-color: white;
+        opacity: 1;
+        /*padding-left: 0;*/
+    }
+
+}
+
+.money:hover {
+    display: block;
+}
+
+.abside .money .nist li {
+    /*position: absolute;*/
+    /*left: 34px;*/
+    /*margin: 100px;*/
+    /*margin-left: 11px;*/
+    float: left;
+    margin: 6px 0; /*10*/
+    /*margin-right: 900px;*/
+    /*background-color: #640000;*/
+    /*line-height: 48px;*/
+    /*  height: 40px;*/
+    width: 160px; /*240*/
+    /*text-align: left;*/
+    border-radius: 6px; /*6*/
+
+
+}
+
+.QQ:hover {
+    background-color: #393c41;
+}
+
+.WW:hover {
+    background-color: #393c41;
+}
+
+.EE:hover {
+    background-color: #393c41;
+}
+
+.RR:hover {
+    background-color: #393c41;
+}
+
+.abside .money .nist {
+    position: absolute;
+    top: 60px; /*90*/
+    left: 11px; /*33*/
+}
+
+/*雾面特效***********************************************************************************************************/
+.wu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    contain: none;
+    padding: 0;
+    margin: 0;
+    /*border: 800px solid rgba(0,0,0,0);*/
+    border-top-width: 800px;
+    border-bottom-width: 800px;
+    border-right-width: 1280px;
+    border-left-width: 1280px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    pointer-events: none;
+    display: none;
+}
+
+.abside:hover + .wu {
+    display: block;
+    pointer-events: none;
+    animation: wuwu 5s linear both;
+
+}
+.nav{
+    cursor: pointer;
+}
+/*.nist li{*/
+/*    display:block;*/
+/*}*/
+
+/*.nist li:hover{*/
+/*    animation: li 5s ;*/
+
+
+/*}*/
+/*@keyframes li {*/
+
+/*    0%{*/
+/*transform: rotate(45deg);*/
+/*}*/
+/*    60%{*/
+/*        transform: rotate(-45deg);*/
+/*    }*/
+/*    100%{*/
+/*        transform: rotate(45deg);*/
+/*    }*/
+
+/*}*/
+
+/*@keyframes wuwu { !*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*!*/
+/*    from {*/
+/*        border-color: rgba(0, 0, 0, 0);*/
+
+/*    }*/
+/*    from {*/
+/*        border-color: rgba(0, 0, 0, .6);*/
+/*    }*/
+
+/*}*/
+
+/*MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+@media screen and (max-width:100px) {
+    nav,div{
+    display: none}
+    #A{
+        display: block;
+    }
+    #A>ul{
+        width: 50%;
+        height: 50%;
+    ;
+    }
+    #A>ul li{
+        margin: 10px;
+
+animation:haha 1s ;
+    }
+    @keyframes haha {
+        0%
+        {
+            top:100px
+        }
+        100%{
+            top:150px
+        }
+
+    }
+
+}
+
+
+
+
+

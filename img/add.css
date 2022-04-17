@@ -1,0 +1,12 @@
+.clerfix::before,
+.clerfix::after{
+    content:'';
+    display: table;
+    clear: both;
+
+}
+body{
+
+    /*font-family: SimSun-ExtB;*/
+    font-size:9px;
+}
